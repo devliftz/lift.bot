@@ -3,7 +3,7 @@ from discord.ext import commands
 
 from lift.gradient import Colorate, Colors
 
-bot = commands.Bot(command_prefix="?", help_command=None, self_bot=True)
+bot = commands.Bot(command_prefix="?", help_command=None, self_bot=True, intents=discord.Intents().all())
 print(Colorate.Vertical(Colors.red_to_yellow, f"""
 
 
