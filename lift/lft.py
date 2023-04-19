@@ -17,14 +17,20 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 14.0.2 | You`re using the latest version
+                      Current Version: 14.1.1 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
 
 @bot.event
 async def on_command(ctx):
-    print(Colorate.Horizontal(Colors.red_to_yellow, f"     Command {ctx.command.name} was used by {ctx.author.name}#{ctx.author.discriminator}"))
+    print(Colorate.Horizontal(Colors.red_to_yellow, f"""
+    ┌────────────────────────────────────┐
+    ├ Command: {ctx.command.name}
+    ├ Server: {ctx.author.guild.name} ID: {ctx.author.guild.id}
+    ├ User: {ctx.author.name}
+    └────────────────────────────────────┘
+    """))
 
 
 def login(token):
