@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 
 from lift.gradient import Colorate, Colors
+import lift.status
 
 bot = commands.Bot(command_prefix="?", help_command=None, intents=discord.Intents().all())
 print(Colorate.Horizontal(Colors.red_to_yellow, f"""
@@ -16,7 +17,7 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 13.9.8 | You`re using the latest version
+                      Current Version: 14.0.1 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
