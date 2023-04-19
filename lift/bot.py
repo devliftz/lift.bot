@@ -16,7 +16,7 @@ print(Colorate.Vertical(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 13.2.5 | You`re using the latest version
+                      Current Version: 13.2.8 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘"""))
 
 
