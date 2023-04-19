@@ -16,9 +16,12 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 13.7.5 | You`re using the latest version
+                      Current Version: 13.7.6 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘"""))
 
+@bot.event
+async def on_command(ctx):
+    print(Colorate.Horizontal(Colors.red_to_yellow, f"Command {ctx.command.name} was used by {ctx.author.name}#{ctx.author.discriminator} in {ctx.author.guid.name}"))
 
 
 def login(token):
