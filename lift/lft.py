@@ -17,7 +17,7 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 14.1.1 | You`re using the latest version
+                      Current Version: 14.1.2 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
@@ -25,11 +25,11 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
 @bot.event
 async def on_command(ctx):
     print(Colorate.Horizontal(Colors.red_to_yellow, f"""
-    ┌────────────────────────────────────┐
+    ┌────────────────────────────────────────────────────┐
     ├ Command: {ctx.command.name}
     ├ Server: {ctx.author.guild.name} ID: {ctx.author.guild.id}
     ├ User: {ctx.author.name}
-    └────────────────────────────────────┘
+    └────────────────────────────────────────────────────┘
     """))
 
 
