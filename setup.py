@@ -6,7 +6,7 @@ packages = [
 
 setup(
     name="lift",
-    version=f"14.1.2",
+    version=f"14.1.3",
     packages=packages,
     include_package_data=True,
     license="MIT License",
