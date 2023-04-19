@@ -17,7 +17,7 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 14.0.1 | You`re using the latest version
+                      Current Version: 14.0.2 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
