@@ -17,7 +17,7 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: 14.1.4 | You`re using the latest version
+                      Current Version: 14.1.5 | You`re using the latest version
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
@@ -27,7 +27,7 @@ async def on_command(ctx):
     print(Colorate.Horizontal(Colors.red_to_yellow, f"""
     ┌────────────────────────────────────────────────────┐
       Command: {ctx.command.name}
-      Input: {ctx.message}
+      Input: {ctx.message.content}
       Server: {ctx.author.guild.name} ID: {ctx.author.guild.id}
       User: {ctx.author.name}
     └────────────────────────────────────────────────────┘
