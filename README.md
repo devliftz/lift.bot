@@ -14,7 +14,7 @@
 
 #### Console Formatting
 
-<img src="https://github.com/devliftz/lift.bot/blob/main/img/prev.png?raw=true" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/devliftz/lift.bot/blob/main/img/prev.png?raw=true" alt="project-screenshot"/>
 
 <h2>Installation Guide</h2>
 
