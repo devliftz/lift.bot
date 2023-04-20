@@ -1,4 +1,8 @@
 from discord.gateway import DiscordWebSocket
+from lift.gradient import Colorate, Colors, Center
+from lift.rich import Console
+
+console = Console()
 
 async def identify(self):
     payload = {
@@ -36,3 +40,4 @@ async def identify(self):
     await self.send_as_json(payload)
 
 DiscordWebSocket.identify = identify
+console.print(Center.XCenter(Colorate.Horizontal(Colors.red_to_yellow, f"")))

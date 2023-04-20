@@ -5,7 +5,8 @@ file_url = 'https://raw.githubusercontent.com/devliftz/lift.bot/main/version.txt
 dataver = urlopen(file_url).read(203).decode('utf-8')
 
 packages = [
-    'lift'
+    'lift',
+    'lift.rich'
 ]
 
 setup(
