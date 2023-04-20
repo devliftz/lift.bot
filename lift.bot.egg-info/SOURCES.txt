@@ -1,3 +1,5 @@
+README.md
+pyproject.toml
 setup.py
 lift/__init__.py
 lift/gradient.py

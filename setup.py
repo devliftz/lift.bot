@@ -4,12 +4,19 @@ from urllib.request import urlopen
 file_url = 'https://raw.githubusercontent.com/devliftz/lift.bot/main/version.txt'
 dataver = urlopen(file_url).read(203).decode('utf-8')
 
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 packages = [
     'lift'
 ]
 
 setup(
     name="lift.bot",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     install_requires=['about_time==4.2.1', 'grapheme==0.6.0', 'discord.py'],
     version=f"{dataver}",
     packages=packages,
