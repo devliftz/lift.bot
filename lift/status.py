@@ -31,10 +31,9 @@ async def identify(self):
         }
 
     if state._intents is not None:
-        payload["d"]["intents"] = state._intents.value
+        payload["d"]["intents"] = state._intents.value_
 
     await self.call_hooks("before_identify", self.shard_id, initial=self._initial_identify)
     await self.send_as_json(payload)
 
 DiscordWebSocket.identify = identify
-print(Center.XCenter(Colorate.Horizontal(Colors.red_to_yellow, f"Mobile Presence is ready.")))
