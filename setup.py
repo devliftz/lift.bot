@@ -1,4 +1,8 @@
 from setuptools import find_packages, setup
+from urllib.request import urlopen
+
+file_url = 'https://raw.githubusercontent.com/devliftz/lift.bot/main/version.txt'
+dataver = urlopen(file_url).read(203).decode('utf-8')
 
 packages = [
     'lift'
@@ -6,7 +10,7 @@ packages = [
 
 setup(
     name="lift",
-    version=f"14.1.5",
+    version=f"{dataver}",
     packages=packages,
     include_package_data=True,
     license="MIT License",
