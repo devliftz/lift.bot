@@ -12,7 +12,7 @@ packages = [
 
 setup(
     name="lift",
-    install_requires=['about_time==4.2.1', 'grapheme==0.6.0', 'discord.py']
+    install_requires=['about_time==4.2.1', 'grapheme==0.6.0', 'discord.py'],
     version=f"{dataver}",
     packages=packages,
     include_package_data=True,
