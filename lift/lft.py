@@ -39,7 +39,15 @@ async def on_command(ctx):
 
 @bot.event
 async def on_shard_ready(shard_id):
-    print(Colorate.Horizontal(Colors.red_to_yellow, f"""Shard {shard_id} is ready"""))
+    print(Colorate.Horizontal(Colors.red_to_yellow, f"""Shard {shard_id} started."""))
+
+@bot.command()
+async def shard(self, ctx, shard_id):
+      if shard_id is None:
+          shard_id = ctx.guild.shard_id
+      info = await self.shard_info(shard_id)
+      embed = discord.Embed(title="", description=f"""> **Shard** `{shard_id}` **has** `{info['guilds']}` **and** `{info['users']}` **users**""")
+      await ctx.reply(embed=embed)
 
 def login(token):
     bot.run(token=f"{token}", log_handler=None)
