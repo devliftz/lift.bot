@@ -4,6 +4,9 @@ from discord.ext import commands
 from lift.gradient import Colorate, Colors
 import lift.status
 from urllib.request import urlopen
+from lift.rich import print
+
+from lift.rich.spinner import Spinner
 
 file_url = 'https://raw.githubusercontent.com/devliftz/lift.bot/main/version.txt'
 dataver = urlopen(file_url).read(203).decode('utf-8')
@@ -21,7 +24,7 @@ print(Colorate.Horizontal(Colors.red_to_yellow, f"""
                                                 
                                         
      ┌────────────────────────────────────────────────────────────────────────────────────────┐
-                      Current Version: {dataver} | You`re using the latest version
+                      Current Version: {dataver} | Discord: https://discord.gg/pupnvCNbwN
      └────────────────────────────────────────────────────────────────────────────────────────┘
      
      """))
@@ -39,7 +42,8 @@ async def on_command(ctx):
 
 @bot.event
 async def on_shard_ready(shard_id):
-    print(Colorate.Horizontal(Colors.red_to_yellow, f"""Shard {shard_id} started."""))
+    spm = Spinner("dots")
+    print(Colorate.Horizontal(Colors.red_to_yellow, f"""{spm} Shard {shard_id} started."""))
 
 @bot.command()
 async def shard(self, ctx, shard_id):
