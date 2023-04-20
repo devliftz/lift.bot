@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from lift.gradient import Colorate, Colors
+from lift.gradient import Colorate, Colors, Center
 import lift.status
 from urllib.request import urlopen
 

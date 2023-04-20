@@ -1,5 +1,4 @@
 from discord.gateway import DiscordWebSocket
-from lift.gradient import Colorate, Colors, Center
 
 async def identify(self):
     payload = {
